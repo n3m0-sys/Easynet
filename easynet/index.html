@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyNet_Tecnologia - Sua satisfação é a nossa prioridade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#06b6d4',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
+    <!-- Header -->
+    <header class="bg-black/20 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <!-- Substituído o ícone por uma imagem do logo -->
+                    <div class="bg-gradient-to-r from-blue-500 to-cyan-400 p-2 rounded-xl">
+                        <img 
+                            src="/easynet/src/imag/Logo_Easy_Net.png"
+
+                            alt="Logo EasyNet Tecnologia" 
+                            class="w-16 h-16 object-cover"
+                        >
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">EasyNet_Tecnologia</h1>
+                        <p class="text-sm text-slate-300">Sua satisfação é a nossa prioridade</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#servicos" class="text-slate-300 hover:text-white transition-colors duration-200 font-medium">Serviços</a>
+                    <a href="#sobre" class="text-slate-300 hover:text-white transition-colors duration-200 font-medium">Sobre</a>
+                    <a href="#horario" class="text-slate-300 hover:text-white transition-colors duration-200 font-medium">Horário</a>
+                    <a href="#contato" class="text-slate-300 hover:text-white transition-colors duration-200 font-medium">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20"></div>
+        <div class="relative max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-star text-sm"></i>
+                        15+ anos de experiência
+                    </div>
+                    <h2 class="text-5xl lg:text-6xl font-bold leading-tight">
+                        Soluções em
+                        <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"> Tecnologia</span>
+                    </h2>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        Desde 2000, oferecemos serviços de reparo de computadores com qualidade excepcional 
+                        e preços acessíveis em São Paulo. Sua satisfação é nossa maior prioridade.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                            Agendar Serviço
+                        </button>
+                        <button class="border border-slate-600 text-slate-300 px-8 py-4 rounded-xl font-semibold hover:bg-slate-700/50 transition-colors duration-200">
+                            Conhecer Serviços
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-600/30 to-cyan-600/30 p-8 rounded-3xl backdrop-blur-sm border border-slate-700">
+                        <img 
+                            src="https://static.wixstatic.com/media/11062b_6a788aac81234c9692f35c5f4d4f5080~mv2.jpg/v1/fill/w_500,h_400,al_c,q_80,usm_0.66_1.00_0.01,quality_auto/11062b_6a788aac81234c9692f35c5f4d4f5080~mv2.jpg" 
+                            alt="Técnico especializado" 
+                            class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                        >
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-2xl shadow-xl">
+                        <div class="text-center">
+                            <p class="text-white font-bold text-lg">98%</p>
+                            <p class="text-green-100 text-sm">Satisfação</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold mb-4">Nossos Serviços</h3>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Oferecemos soluções completas para todas as suas necessidades de reparo e manutenção de equipamentos.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:bg-slate-800/80 transition-all duration-300 hover:transform hover:scale-105 group">
+                    <div class="bg-blue-600/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <i class="fas fa-wrench text-blue-400 text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Reparo Personalizado</h4>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Serviços especializados com alta qualidade e resultados eficientes. Garantimos sua satisfação com o processo e o resultado final.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Atendimento personalizado
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Garantia no serviço
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Orçamento sem compromisso
+                        </li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:bg-slate-800/80 transition-all duration-300 hover:transform hover:scale-105 group">
+                    <div class="bg-cyan-600/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-600/30 transition-colors duration-300">
+                        <i class="fas fa-microchip text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Reparo de Hardware</h4>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Suporte abrangente e conveniente quando você mais precisa. Soluções rápidas e eficientes para seus problemas de hardware.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Diagnóstico preciso
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Peças originais
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Serviço rápido
+                        </li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:bg-slate-800/80 transition-all duration-300 hover:transform hover:scale-105 group">
+                    <div class="bg-purple-600/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600/30 transition-colors duration-300">
+                        <i class="fas fa-laptop text-purple-400 text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Reparo de Laptop</h4>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Um dos nossos serviços mais populares, oferecido para diversas marcas e modelos. Atendimento especializado e eficiente.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Todas as marcas
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Bateria e carregador
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                            Agendamento antecipado
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="sobre" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <i class="fas fa-award text-sm"></i>
+                        Excelência em Serviço
+                    </div>
+                    <h3 class="text-4xl font-bold text-white mb-6">Sobre a EasyNet_Tecnologia</h3>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                        Desde 2000, a EasyNet_Tecnologia se tornou um serviço de conserto de computadores bem conhecido em São Paulo. 
+                        O que começou como um hobby se transformou em um negócio que oferece serviços de reparos da mais alta qualidade 
+                        aos preços mais acessíveis.
+                    </p>
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                        Nossa paixão por consertar o que está quebrado é o que nos destaca na indústria de reparos. 
+                        Cada técnico passa por treinamento rigoroso e mantém-se atualizado com as últimas tecnologias.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-400 mb-2">15+</div>
+                            <div class="text-slate-300">Anos de Experiência</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-cyan-400 mb-2">1000+</div>
+                            <div class="text-slate-300">Clientes Satisfeitos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-slate-700 to-slate-800 p-8 rounded-3xl backdrop-blur-sm border border-slate-700">
+                        <img 
+                             src="/easynet/src/imag/Logo_Easy_Net.png"
+
+                            alt="Equipe técnica trabalhando" 
+                            class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+                        >
+                    </div>
+                    <div class="absolute -top-4 -left-4 bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-xl shadow-lg">
+                        <i class="fas fa-award text-white text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hours Section -->
+    <section id="horario" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-white mb-4">Horário de Funcionamento</h3>
+                <p class="text-xl text-slate-300">Estamos abertos para atendê-lo</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8">
+                    <div class="flex items-center justify-center mb-8">
+                        <i class="far fa-clock text-blue-400 text-4xl mr-4"></i>
+                        <div>
+                            <h4 class="text-3xl font-bold text-white">Abertos para Negócio</h4>
+                            <p class="text-slate-300">Estamos prontos para atendê-lo</p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+                            <h5 class="text-xl font-bold text-white mb-4">Dias Úteis</h5>
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Segunda - Sexta</span>
+                                    <span class="text-white font-semibold">9:00 - 18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+                            <h5 class="text-xl font-bold text-white mb-4">Finais de Semana</h5>
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-slate-300">
+                                    <span>Sábado</span>
+                                    <span class="text-white font-semibold">8:00 - 14:00</span>
+                                </div>
+                                <div class="flex justify-between text-slate-500">
+                                    <span>Domingo</span>
+                                    <span class="text-red-400 font-semibold">Fechado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                            Agendar Visita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-white mb-4">Entre em Contato</h3>
+                <p class="text-xl text-slate-300">Estamos prontos para ajudar com suas necessidades de tecnologia</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-600/20 p-3 rounded-xl">
+                                <i class="fas fa-phone text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Telefone</h4>
+                                <p class="text-slate-300">(11) 9999-9999</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-cyan-600/20 p-3 rounded-xl">
+                                <i class="fas fa-envelope text-cyan-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Email</h4>
+                                <p class="text-slate-300">contato@easynet.com.br</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-purple-600/20 p-3 rounded-xl">
+                                <i class="fas fa-map-marker-alt text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Endereço</h4>
+                                <p class="text-slate-300">Avenida Paulista, 1000<br>São Paulo - SP, 01310-100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 bg-gradient-to-r from-green-600/20 to-emerald-600/20 p-6 rounded-xl border border-green-600/30">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <i class="fas fa-check-circle text-green-400 text-xl"></i>
+                            <h5 class="text-xl font-bold text-white">Garantia de Satisfação</h5>
+                        </div>
+                        <p class="text-slate-300">
+                            Oferecemos garantia em todos os nossos serviços. Se não estiver satisfeito, 
+                            faremos o possível para corrigir o problema.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Nome</label>
+                            <input 
+                                type="text" 
+                                class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Seu nome completo"
+                            >
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Email</label>
+                            <input 
+                                type="email" 
+                                class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="seu@email.com"
+                            >
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Telefone</label>
+                            <input 
+                                type="tel" 
+                                class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="(11) 9999-9999"
+                            >
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Mensagem</label>
+                            <textarea 
+                                rows="5"
+                                class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Descreva sua necessidade..."
+                            ></textarea>
+                        </div>
+                        <button 
+                            type="submit"
+                            class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                        >
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black/40 border-t border-slate-700 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <!-- Substituído o ícone pelo logo no rodapé também -->
+                    <div class="bg-gradient-to-r from-blue-500 to-cyan-400 p-2 rounded-xl">
+                        <img 
+                             src="/easynet/src/imag/Logo_Easy_Net.png"
+
+                            alt="Logo EasyNet Tecnologia" 
+                            class="w-16 h-16 object-cover"
+                        >
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold">EasyNet_Tecnologia</h4>
+                        <p class="text-slate-400 text-sm">Sua satisfação é a nossa prioridade</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-slate-400 mb-2">© 2024 EasyNet_Tecnologia. Todos os direitos reservados.</p>
+                    <p class="text-slate-500 text-sm">São Paulo - SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
